@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      } 
+
+      /* body태그 자체에 css 요소 부여 */
+        body {
+	        font-family: "LeeSeoyun";
+	        margin: 0;
+	        display: flex;
+	        justify-content: center;
+	        background-image: url("./background.png");
+        }
+
+        .container{
+            width: 390px;
+            background-color: #87CEEB;
+            height: 100%;
+        }
+
+        .photos{
+            margin-top: 30px;
+
+        }
+
+        .photo-frame{
+            background-color: white;
+            margin: 15px 20px;
+            height: 200px;
+
+            background-size: cover;
+            position: relative;
+        }
+
+        .text p{
+            margin-bottom: 10px; 
+            text-align: center; 
+            font-size: 18px; 
+            color:white;
+            background-color: black;
+            width: fit-content;
+            padding:0 20px;
+            border-radius: 5px;
+            bottom: 0;
+            position: absolute;
+
+            transform: translate(-50%);
+            left: 50%;
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .f-title{
+            color: white;
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        .f-date{
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div class="photo-frame">
+                <video autoplay loop
+                    src="v1.mp4" type="video/mp4"
+                    frameborder="0"
+                    class="video">
+                </video>
+                <div class="text">
+                    <p>우리의 봄🌸</p>
+                </div>
+            </div>
+
+            <div class="photo-frame">
+                <video autoplay loop
+                    src="v2.mp4" type="video/mp4"
+                    frameborder="0"
+                    class="video">
+                </video>
+                <div class="text">
+                    <p>우리의 여름🌴</p>
+                </div>
+            </div>
+
+            <div class="photo-frame">
+                <video autoplay loop
+                    src="v3.mp4" type="video/mp4"
+                    frameborder="0"
+                    class="video">
+                </video>  
+                <div class="text">
+                    <p>우리의 가을🍁</p>
+                </div>
+            </div>
+
+            <div class="photo-frame">
+                <video autoplay loop
+                    src="v4.mp4" type="video/mp4"
+                    frameborder="0"
+                    class="video">
+                </video>
+                <div class="text">
+                    <p>우리의 겨울❄️</p>
+                </div>                        
+            </div>
+        </div>
+        <div class="footer">
+            <p class="f-title">♥ 예지앞사 D+300 ♥</p>
+            <p class="f-date">2023.02.09</p>
+        </div>
+    </div>
+</body>
+</html>
